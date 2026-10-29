@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CampusPulse – Campus Event Discovery Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="top">
+  <div class="bar">
+    <a class="logo" href="#/"><span class="mark"><i data-lucide="zap" aria-hidden="true"></i></span>CampusPulse</a>
+    <button class="icon-btn menu" id="menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><i data-lucide="menu" aria-hidden="true"></i></button>
+    <nav id="nav" aria-label="Main">
+      <a href="#/">Home</a>
+      <a href="#/explore">Explore Events</a>
+      <a href="#/saved">Saved Events</a>
+      <a href="#/dashboard">Organizer Dashboard</a>
+      <a class="btn" href="#/form"><i data-lucide="plus" aria-hidden="true"></i>Create Event</a>
+    </nav>
+    <button class="icon-btn" id="search-open" aria-label="Search events"><i data-lucide="search" aria-hidden="true"></i></button>
+  </div>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="foot">CampusPulse · Demo build. Data lives in this browser only (LocalStorage).</footer>
+<dialog id="dlg" aria-modal="true"></dialog>
+<div id="toasts" aria-live="polite"></div>
+</body>
+</html>
